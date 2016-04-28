@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#1dcae1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homework"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD:"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberPassword"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:focusable="true"/>
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:inputType="numberPassword"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:maxLength="1"
+            android:nextFocusDown="@id/edit1"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:inputType="numberPassword"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:maxLength="1"
+            android:nextFocusDown="@id/edit2"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:inputType="numberPassword"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:maxLength="1"
+            android:nextFocusDown="@id/edit3"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
